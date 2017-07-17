@@ -23,7 +23,7 @@ class Summary extends React.Component {
 
   render() {
     return(
-      <div className="container navbar navbar-default">
+      <div className="navbar-default container-fluid">
         <ul className="list-inline text-center">
           <li><TimeTotal name="2.5s" value={12.3} /></li>
           <li>{'|'}</li>
