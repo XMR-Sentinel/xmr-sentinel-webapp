@@ -5,6 +5,8 @@ import {connect} from "react-redux"
  * Import containers and components
  */
 
+import Summary from '../containers/Summary.js'
+
 class Index extends React.Component {
 
   constructor() {
@@ -14,11 +16,10 @@ class Index extends React.Component {
   render() {
     return(
       <div>
-        <UploadForm />
+        <Summary />
       </div>
     )
   }
-
 }
 
 const mapStateToProps = (state) => {

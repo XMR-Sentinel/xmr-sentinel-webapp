@@ -5,7 +5,6 @@ import {
   Route
 } from 'react-router-dom'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 
 /**
  * Root component to create navigation
@@ -35,15 +34,17 @@ import Root from './Root'
  * Importing main scenes for routing
  */
 
+import Summary from '../scenes/Index.js'
+
 class App extends React.Component {
   render () {
     return (
-      <MuiThemeProvider>
-        <Router>
-          <Root >
-          </Root>
-        </Router>
-      </MuiThemeProvider>
+      <Router>
+        <Root >
+          <Route exact path="/" component={Summary}></Route>
+          <Route path="/summary" component={Summary}></Route>
+        </Root>
+      </Router>
     )
   }
 }
