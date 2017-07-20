@@ -4,8 +4,8 @@ import {connect} from "react-redux"
 /**
  * Import containers and components
  */
-
 import Summary from '../containers/Summary.js'
+import MainTable from '../containers/MainTable.js'
 
 class Index extends React.Component {
 
@@ -17,6 +17,7 @@ class Index extends React.Component {
     return(
       <div>
         <Summary />
+        <MainTable />
       </div>
     )
   }
